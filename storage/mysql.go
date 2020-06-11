@@ -9,7 +9,7 @@ import (
 	"github.com/jmoiron/sqlx"
 )
 
-const insertQuery = "INSERT INTO info (Table_ID,Device_ID,Communicate_ID,Value) VALUES (?,?,?,?)"
+const insertQuery = "INSERT INTO info (Device_ID,Communicate_ID,Value) VALUES (?,?,?)"
 
 // Storage object with Connection reference and worker Channel
 type Storage struct {
